@@ -1,0 +1,579 @@
+/* ปรับ CSS สำหรับการ์ดและการจัดแถว */
+.car-item {
+  width: 230px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+}
+
+.additional-info {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.icon-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.icon-benefits div {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+.icon-benefits img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.service-info {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-info h2 {
+  text-align: center;
+}
+
+.service-info p {
+  text-align: justify;
+}
+.top-bar {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลาง */
+  align-items: center;
+  gap: 10px; /* ระยะห่างระหว่างปุ่มและ input */
+  padding: 20px; /* ปรับ padding */
+  border: 1px solid #ddd; /* เพิ่มกรอบ */
+  background-color: white; /* สีพื้นหลัง */
+  margin-bottom: 20px; /* ลดระยะห่างระหว่างบาร์กับส่วนล่าง */
+}
+
+.location-select, .date-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-button {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end; /* ดันปุ่มไปทางขวา */
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* แสดง 5 คันต่อแถว */
+  gap: 20px;
+  padding: 20px;
+}
+
+.car-item {
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-item img {
+  max-width: 100px; /* กำหนดขนาดกว้างสูงสุด */
+  height: auto;
+  margin: 0 auto; /* จัดรูปภาพให้อยู่ตรงกลาง */
+  display: block; /* จัดให้เป็น Block element */
+}
+
+button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.car-item h3, .car-item p {
+  margin: 10px 0;
+}
+
+.car-item button {
+  background-color: #ff4500;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.car-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.car-info {
+  width: 45%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.driver-info {
+  width: 45%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+  width: 100%;
+  margin-top: 20px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.booking-page {
+  text-align: center;
+}
+
+.booking-page img {
+  max-width: 200px;
+}
+
+.booking-page button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.confirmation-page {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  width: 50%;
+}
+
+.confirmation-page h1 {
+  color: #4CAF50;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.confirmation-page p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.confirmation-page button {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.confirmation-page button:hover {
+  background-color: #ff9933;
+}
+
+/* Driver Info Form */
+.driver-info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.driver-info h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+  text-align: center; /* จัดให้อยู่ตรงกลาง */
+}
+
+.driver-info input {
+  font-size: 16px;
+}
+
+.driver-info form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* สองคอลัมน์ที่มีขนาดเท่ากัน */
+  gap: 20px;
+}
+
+.driver-info label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  grid-column: span 2; /* ให้ label ที่มีข้อความยาวลงทั้งสองคอลัมน์ */
+}
+
+.driver-info input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.driver-info button {
+  grid-column: span 2;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* CSS สำหรับ PaymentPage */
+
+.payment-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.payment-details {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.payment-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.payment-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.payment-form button {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.payment-form button:hover {
+  background-color: darkorange;
+}
+
+.payment-summary {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.payment-summary h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.payment-summary p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.payment-summary p span {
+  font-weight: bold;
+}
+
+.additional-info {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.icon-benefits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.icon-benefits div {
+  text-align: center;
+  padding: 20px;
+}
+
+.icon-benefits img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.icon-benefits p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.additional-info h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+/* จัดการกับส่วนของ icon-benefits ให้เรียงเป็นแนวนอน */
+.icon-benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+/* จัดการกับไอคอนแต่ละอันใน icon-benefits */
+.icon-benefits div {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.icon-benefits img {
+  width: 100px;
+  height: auto;
+}
+
+.icon-benefits p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* เพิ่มการจัดการกับ service-info ให้ข้อความมีระยะห่างที่พอดี */
+.service-info {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-info p {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+
+
+/* ................................ */
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  margin: 0.5rem 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-content {
+  padding: 1rem;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.car-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.car-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Additional Information */
+.additional-info {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.icon-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.icon-benefits div {
+  text-align: center;
+}
+
+.icon-benefits img {
+  max-width: 50px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .car-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-benefits {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .car-list {
+    justify-content: space-between;
+  }
+}
+
+/* Payment Page Styles */
+.payment-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Map Container */
+.map-container {
+  height: 400px;
+  margin: 2rem 0;
+}
+
+/* Service Information */
+.service-info {
+  padding: 2rem 1rem;
+  background-color: #f1f1f1;
+  text-align: center;
+}
